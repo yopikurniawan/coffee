@@ -1,0 +1,66 @@
+[
+   {
+      "name": "black",
+      "price": 200000
+   },
+   {
+      "name": "latte",
+      "price": 145000
+   },
+   {
+      "name": "cappucino",
+      "price": 250000
+   },
+   {
+      "name": "espresso",
+      "price": 250000
+   },
+   {
+      "name": "doppio",
+      "price": 250000
+   },
+   {
+      "name": "cortado",
+      "price": 250000
+   },
+   {
+      "name": "red eye",
+      "price": 250000
+   },
+   {
+      "name": "galao",
+      "price": 250000
+   },
+   {
+      "name": "lungo",
+      "price": 250000
+   },
+   {
+      "name": "macchiato",
+      "price": 250000
+   },
+   {
+      "name": "mocha",
+      "price": 250000
+   },
+   {
+      "name": "ristretto",
+      "price": 250000
+   },
+   {
+      "name": "flat white",
+      "price": 250000
+   },
+   {
+      "name": "affogato",
+      "price": 250000
+   },
+   {
+      "name": "cafe au lait",
+      "price": 250000
+   },
+   {
+      "name": "irish",
+      "price": 250000
+   }
+]

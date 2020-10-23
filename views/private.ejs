@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<title>Hello, world!</title>
+		<style>
+			img {
+				width: 220px;
+				height: auto;
+				margin-left: 50px;
+			}
+			select {
+				/* width: 1100px; */
+				background-color: black;
+				color: white;
+				/* height: 50px; */
+			}
+			form {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<%- include('navbar.ejs') %>
+		<p>Selamat Datang di Kopi kesayangan Anda</p>
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<img
+						src="https://phinemo.com/wp-content/uploads/2016/03/kopi-manggar-ashadi.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="col">
+					<img
+						src="https://phinemo.com/wp-content/uploads/2016/03/kopi-manggar-ashadi.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="col">
+					<img
+						src="https://phinemo.com/wp-content/uploads/2016/03/kopi-manggar-ashadi.jpg"
+						alt=""
+					/>
+				</div>
+			</div>
+			<br />
+
+			<div class="row">
+				<div class="col">
+					<img
+						src="https://phinemo.com/wp-content/uploads/2016/03/kopi-manggar-ashadi.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="col">
+					<img
+						src="https://phinemo.com/wp-content/uploads/2016/03/kopi-manggar-ashadi.jpg"
+						alt=""
+					/>
+				</div>
+				<div class="col">
+					<img
+						src="https://phinemo.com/wp-content/uploads/2016/03/kopi-manggar-ashadi.jpg"
+						alt=""
+					/>
+				</div>
+			</div>
+			<br /><br />
+
+			<div style="text-align: center" class="d-flex flex-column">
+				<form action="/private/checkout" method="post">
+					<label for="Pilih Kopi yang kamu inginjan"></label>
+					<div class="dropdown">
+						<div>
+							<label>Category</label>
+							<select
+								name="name"
+								class="browser-default"
+								style="margin-top: 0.5rem"
+							>
+								<option value="">-- Select Coffee --</option>
+								<% data.forEach( item => { %>
+								<option value="<%= item.id %>"><%= item.name %></option>
+								<% }) %>
+							</select>
+						</div>
+					</div>
+					<br />
+					<div class="input-group mb-3">
+						<input name="count_order" type="text" class="form-control" placeholder="Masukkan jumlah kopi yang mau dipesan" aria-label="Recipient's username" aria-describedby="basic-addon2">
+						<div class="input-group-append">
+						  <span class="input-group-text" id="basic-addon2">Mau Pesan berapa</span>
+						</div>
+					 </div>
+					</div>
+					<br />
+					<button type="submit" class="btn btn-primary btn-lg">
+						Order Now
+					</button>
+					<button type="button" class="btn btn-secondary btn-lg">
+						Cancel Oeder
+					</button>
+				</form>
+				<br />
+			</div>
+		</div>
+
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+
+		<ul class="pager">
+			<li class="previous"><a href="#">Previous</a></li>
+			<li class="next"><a href="#">Next</a></li>
+		</ul>
+
+		<!-- Optional JavaScript -->
+		<script>
+			// Material Select Initialization
+			$(document).ready(function () {
+				$(".mdb-select").materialSelect()
+			})
+		</script>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

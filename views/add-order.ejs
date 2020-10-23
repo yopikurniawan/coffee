@@ -1,0 +1,49 @@
+<main class="container">
+	<h4 class="center-align">Add Meme</h4>
+
+	<div class="section">
+		<form action="/memes/add" method="POST">
+			<div>
+				<label>Author</label>
+				<input type="text" name="author" placeholder="John Doe" />
+			</div>
+			<div>
+				<label>Title</label>
+				<input
+					type="text"
+					name="title"
+					placeholder="Did we colonize Mars yet?"
+				/>
+			</div>
+			<div>
+				<label>Image URL</label>
+				<input
+					type="text"
+					name="imageURL"
+					placeholder="http://arah.in/memes-7"
+				/>
+			</div>
+			<div>
+				<label>Category</label>
+				<select
+					name="CategoryId"
+					class="browser-default"
+					style="margin-top: 0.5rem"
+				>
+					<option value="">-- Select Category --</option>
+					<% data.forEach( item => { %>
+					<option value="<%= item.id %>"><%= item.name %></option>
+					<% }) %>
+				</select>
+			</div>
+			<div class="center-align" style="margin-top: 2rem">
+				<button
+					type="submit"
+					class="waves-effect waves-light btn-large blue"
+				>
+					Submit
+				</button>
+			</div>
+		</form>
+	</div>
+</main>
